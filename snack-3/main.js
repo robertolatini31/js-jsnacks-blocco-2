@@ -14,7 +14,7 @@ console.log(`lista cognomi: ${surnameList}`);
 let newList = [];
 
 for (let i = 0; (i < nameList.length && i < surnameList.length); i++) {
-    let element = nameList[i] + ' ' + surnameList[i];
+    let element = nameList[Math.ceil((Math.random() * nameList.length)) - 1] + ' ' + surnameList[Math.ceil((Math.random() * nameList.length)) - 1];
     newList[i] = element;
 }
 
